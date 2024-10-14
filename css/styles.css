@@ -1,10 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
-ul {
-  list-style-type: none;
+.header-cnt {
+  display: flex;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-cnt {
+  display: flex;
+  gap: 76px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -18,6 +51,14 @@ ul {
 }
 .logo-accent {
   color: #2e2f42;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.nav-addres-list {
+  display: flex;
+  gap: 40px;
 }
 .nav-list-item {
   text-decoration: none;
@@ -45,8 +86,13 @@ ul {
 .nav-addres-item:focus {
   color: #404bbf;
 }
+.nav-addres-list {
+  display: flex;
+}
 .title-cnt {
   background: #2e2f42;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .title {
   font-weight: 700;
@@ -55,6 +101,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .btn {
@@ -62,15 +110,30 @@ ul {
   text-align: center;
   cursor: pointer;
   font-weight: 500;
+  white-space: nowrap;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   background: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  max-width: 169px;
+  margin: 0 auto;
+  display: block;
 }
 .btn:hover,
 .btn:focus {
   background: #404bbf;
+}
+.dcr {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.dcr-list {
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 24 * 3) / 4);
 }
 .dcr-title {
   font-weight: 500;
@@ -78,6 +141,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .dcr-text {
   font-size: 16px;
@@ -85,9 +149,22 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .second-cnt {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .our-team {
   font-weight: 700;
@@ -97,9 +174,19 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
   background: #fff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  padding-bottom: 32px;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 24 * 3) / 4);
 }
 .team-list-name {
   font-weight: 500;
@@ -108,6 +195,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-list-dsc {
   font-weight: 400;
@@ -117,6 +206,10 @@ ul {
   text-align: center;
   color: #434455;
 }
+.portfolio {
+  padding-top: 129px;
+  padding-bottom: 120px;
+}
 .our-portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -125,6 +218,13 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+
+  padding-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
 }
 .portfolio-title {
   font-weight: 500;
@@ -132,12 +232,26 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+.portfolio-item {
+  width: calc((100% - 24 * 2) / 3);
 }
 .portfolio-dcr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+.footer-cnt {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+  background: #2e2f42;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -157,7 +271,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
-.footer-cnt {
-  background: #2e2f42;
+  max-width: 264px;
+  padding-top: 16px;
 }
