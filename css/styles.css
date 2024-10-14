@@ -33,6 +33,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header {
   border-bottom: 1px solid #e7e9fc;
 }
 .nav-cnt {
@@ -125,6 +127,9 @@ body {
   max-width: 169px;
   margin: 0 auto;
   display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .btn:hover,
 .btn:focus {
@@ -241,11 +246,11 @@ body {
 }
 .portfolio-name {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-item {
   width: calc((100% - 2 * 24px) / 3);
-  border: 1px solid #e7e9fc;
-  border-top: none;
 }
 .portfolio-dcr {
   font-size: 16px;
@@ -254,9 +259,9 @@ body {
   color: #434455;
 }
 .footer-cnt {
-  padding: 100px 0;
-  padding-left: 156px;
+  margin-left: 156px;
   background: #2e2f42;
+  padding: 100px 0;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
